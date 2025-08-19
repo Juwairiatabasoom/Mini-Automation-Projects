@@ -1,7 +1,7 @@
 # ⚡ Mini-Automation Projects
 
-A collection of small Python projects that use **APIs** and automation to simplify daily tasks.  
-This repository is designed as a learning resource for API integration, automation, and task scheduling using Python.
+This repository contains a collection of small **Python automation projects** that use APIs, automation scripts, and browser interaction tools like **Selenium** to simplify everyday tasks.  
+Each project demonstrates how Python can integrate with real-world services to fetch, process, and act on data automatically.
 
 ---
 
@@ -11,39 +11,49 @@ This repository is designed as a learning resource for API integration, automati
 This folder contains projects that integrate with external APIs to fetch, process, and act on real-world data:
 
 #### 🌧️ Rain Notifier
-- Uses the **OpenWeather API** to check weather forecasts.  
-- Sends an **SMS alert** via **Twilio API** if rain is predicted, reminding you to carry an umbrella.  
+- **APIs Used:** [OpenWeather API](https://openweathermap.org/api), [Twilio API](https://www.twilio.com/).  
+- Checks weather forecasts and sends an **SMS alert** if rain is predicted.  
+- Example: "It might rain today ☔, don’t forget your umbrella!"  
 
 #### 📈 Stock Notifier
-- Fetches stock data from the **Alpha Vantage API** for Tesla (TSLA).  
-- Calculates the price difference between days and, if significant, fetches related news from **NewsAPI**.  
-- Sends alerts with news headlines via **Twilio API**.  
+- **APIs Used:** [Alpha Vantage API](https://www.alphavantage.co/), [NewsAPI](https://newsapi.org/), [Twilio API](https://www.twilio.com/).  
+- Fetches stock data for Tesla (TSLA) and calculates daily price changes.  
+- If change is significant, fetches related news and sends it via SMS.  
 
 #### 📊 Habit Tracker
-- Uses the **Pixela API** to track daily progress on habits (e.g., DSA questions solved).  
-- Records data in a visual graph, with options to add, update, and delete daily entries.  
+- **API Used:** [Pixela API](https://pixe.la/).  
+- Tracks daily progress (e.g., DSA questions solved).  
+- Records, updates, or deletes entries on a graph for visual tracking.  
 
 #### 🏋️ Workout Tracker
-- Uses the **Nutritionix API** to process workout details based on natural language input.  
-- Logs workout info (exercise, duration, calories burned) into a Google Sheet via the **Sheety API**.  
+- **APIs Used:** [Nutritionix API](https://www.nutritionix.com/business/api), [Sheety API](https://sheety.co/).  
+- Logs workout details based on natural language input.  
+- Stores exercise data (name, duration, calories burned) into a Google Sheet.  
 
 #### 📧 Monday Quote Mail Sender
-- Sends a **motivational quote every Monday** via Gmail’s SMTP server.  
-- Randomly selects a quote from `quotes.txt` and emails it to the recipient.  
+- **Tools Used:** Python `smtplib`, Gmail SMTP server.  
+- Sends a **motivational quote every Monday** by email.  
+- Picks a random quote from `quotes.txt` and delivers it to the recipient’s inbox.  
 
 ---
 
 ### 🔹 Automatic Job Applier
-- Automates searching and applying for jobs online.  
-- Uses scripts to filter jobs and auto-submit applications with stored user data.  
+This standalone project automates job applications on **LinkedIn** using **Selenium WebDriver**.  
 
----
+#### ✨ Features
+- Logs into LinkedIn using stored credentials.  
+- Navigates job listings from a predefined search URL.  
+- Automatically fills in phone number and submits applications.  
+- Skips complex, multi-step applications.  
+- Keeps the browser open if the script crashes for debugging.  
 
-## 🛠️ Tech & Tools
+#### 🛠️ Tech & Tools
 - **Python 3.x**  
-- APIs: OpenWeather, Twilio, Alpha Vantage, NewsAPI, Pixela, Nutritionix, Sheety  
-- Libraries: `requests`, `datetime`, `smtplib`, `twilio`  
+- **Selenium** (for browser automation)  
+- Google Chrome & Chrome WebDriver  
+- LinkedIn account  
 
----
-   git clone https://github.com/your-username/mini-Automation-Projects.git
-   cd mini-Automation-Projects
+#### 🚀 Usage
+1. Install Selenium:
+   ```bash
+   pip install selenium
