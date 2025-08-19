@@ -1,4 +1,3 @@
-# Mini-Automation-Projects
 # ⚡ Mini-Automation Projects
 
 A collection of small Python projects that use **APIs** and automation to simplify daily tasks.  
@@ -28,9 +27,7 @@ This folder contains projects that integrate with external APIs to fetch, proces
 - Uses the **Nutritionix API** to process workout details based on natural language input.  
 - Logs workout info (exercise, duration, calories burned) into a Google Sheet via the **Sheety API**.  
 
----
-
-### 🔹 Monday Quote Mail Sender
+#### 📧 Monday Quote Mail Sender
 - Sends a **motivational quote every Monday** via Gmail’s SMTP server.  
 - Randomly selects a quote from `quotes.txt` and emails it to the recipient.  
 
@@ -48,4 +45,5 @@ This folder contains projects that integrate with external APIs to fetch, proces
 - Libraries: `requests`, `datetime`, `smtplib`, `twilio`  
 
 ---
-
+   git clone https://github.com/your-username/mini-Automation-Projects.git
+   cd mini-Automation-Projects
